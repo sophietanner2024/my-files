@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .a {
+        background-color: rgb(244, 197, 116);
+      }
+      .b {
+        background-color: rgb(232, 232, 185);
+      }
+
+      .responsive {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="a">title</div>
+
+    <div class= "b">information goes here</div>
+
+    <script>
+      var banner = document.createElement("div");
+      banner.className = "b";
+      banner.innerHTML = "Banner Content";
+
+      document.body.insertBefore(banner,document.body.childNodes[0]);
+   
+      var content = document.getElementsByClassName("a")[0];
+      content.parentNode.insertBefore(banner, content);
+    </script>
+<br>
+<ul>
+    <img src="nature.jpg" alt="Nature" class="responsive" width="600" height="400">
+</ul>
+<br>
+<ul>
+    <img src="sunset.jpg" alt="sunset" class="responsive" width="600" height="400">
+</ul>
+    </body>
+</html>
